@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <a href="index.html">Home</a>
+        <a href="game.html">Game</a>
+        <a href="ranking.html">Rankings</a>
+        <a href="register.html">Register</a>
+        <a href="login.html" id="login-link" class="active">Login</a>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="part form-card">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label>Username:</label>
+            <input type="text" id="login-username" required><br>
+            <label>Password:</label>
+            <input type="password" id="login-password" required><br>
+
+            <div class="form-actions">
+                <button class="btn" type="submit">Login</button>
+                <a class="btn ghost" href="register.html">Don't have an account? Register</a>
+            </div>
+        </form>
+        <div id="login-msg" class="msg"></div>
+    </section>
+  </main>
+
+  <script src="/js/login.js"></script>
+  
+</body>
+</html>

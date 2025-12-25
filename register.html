@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <a href="index.html">Home</a>
+        <a href="game.html">Game</a>
+        <a href="ranking.html">Rankings</a>
+        <a href="register.html" class="active">Register</a>
+        <a href="login.html" id="login-link" >Login</a>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="part form-card">
+        <h2>Create Account</h2>
+        <form id="register-form">
+            <label>Username:</label>
+            <input type="text" id="reg-username" required><br>
+            <label>Email:</label>
+            <input type="email" id="reg-email" required><br>
+            <label>Password:</label>
+            <input type="password" id="reg-password" required><br>
+            <label>Confirm Password:</label>
+            <input type="password" id="reg-confirm" required><br>
+
+            <div class="form-actions">
+                <button class="btn" type="submit">Register</button>
+                <a class="btn ghost" href="login.html">Already have one?</a>
+            </div>
+        </form>
+
+        <div id="reg-msg" class="msg"></div>
+    </section>
+ </main>
+
+ <script src="/js/register.js"></script>
+ 
+</body>
+</html>

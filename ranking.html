@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rankings</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <a href="index.html">Home</a>
+        <a href="game.html">Game</a>
+        <a href="ranking.html" class="active">Rankings</a>
+        <a href="register.html">Register</a>
+        <a href="login.html" id="login-link">Login</a>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Players Rankings</h2>
+    <table border="1" id="rankings-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Username</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="rankings-body">
+        <!--scores will be injected here with js-->  
+      </tbody>
+    </table>
+    <p id="message"></p>
+  </main>
+
+  <script src="/js/ranking.js"></script>
+</body>
+</html>

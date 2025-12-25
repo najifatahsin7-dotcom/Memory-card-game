@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <a href="index.html">Home</a>
+            <a href="game.html" class="active">Game</a>
+            <a href="ranking.html">Rankings</a>
+            <a href="register.html">Register</a>
+            <a href="login.html" id="login-link">Login</a>
+
+          </ul>
+        </nav>
+      </header>
+    
+
+  <section class="game-container">
+    <h1>Memory Match Game</h1>
+
+    <div class="options">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="marvel">Marvel</option>
+        <option value="food">Food</option>
+        <option value="flowers">Flowers</option>
+        <option value="f1">F1</option>
+        <option value="band">Band</option>
+      </select>
+
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy (8 pairs)</option>
+        <option value="medium">Medium (12 pairs)</option>
+        <option value="hard">Hard (15 pairs)</option>
+      </select>
+
+      <button id="start-btn" class="btn">Start Game</button>
+    </div>
+
+    <div class="info">
+      <p>⏰ Time Left: <span id="time">0</span>s</p>
+      <p>🎯 Matches: <span id="matches">0</span></p>
+    </div>
+
+    <div id="game-board" class="board"></div>
+  </section>
+
+  <div id="game-message" class="game-message"></div>
+
+  <script type="module" src="/js/game.js"></script>
+</body>
+</html>
